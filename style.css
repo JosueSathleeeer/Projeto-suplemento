@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    position: fixed;
+}
+
+nav ul li {
+    margin: 30px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: rgb(83, 74, 74);
+}
+
+nav img {
+    width: 280px;
+    top: -35px;
+    left: 250px;
+    position: fixed;
+}
+
+#home {
+    background: url('fundo\ certo.png') center/cover no-repeat;
+    color: white
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(181, 184, 197);
+    font-size: 25px;
+}
+
+body {
+    background-color: rgb(03, 03, 03);
+    /* background-color: aqua; */
+}
+
+/* em vez de mexer em TODAS as imagens do site */
+.fundo img {
+    width: 100%;
+    max-width: 3000px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.chocolate img {
+    width: 600px;
+
+    height: auto;
+    display: block;
+
+}
+
+
+.baunilha img {
+    width: 600px;
+
+}
+
+
+.morango img {
+    width: 600px;
+}
+
+.catalogo{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    left: 0;
+    margin-top: 100px;
+}
+
+table{
+    width: 1720px;
+    font-size: 25px;
+    text-align: center;
+    border: 100px;
+    margin: 100px auto;
+    border-collapse: collapse;
+    top: 600px;
+    margin-top: 100px;
+    font-weight: bold;
+
+}
+
+th,
+tr{
+    border: 3px solid gray;
+    padding: 15px;
+    color: white;
+}
+
+td{
+    color: white;
+    border: 3px solid gray;
+}
+
+#contato{
+    color: white;
+}
+
+#contato form{
+    text-align: center;
+    font-size: 25px;
+    text-align: center;
+    border: 100px;
+    margin: 100px auto;
+    top: 600px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.ajuda{
+    max-width: 950px;
+    margin: 20px auto;
+    padding: 25px;
+
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-radius: 12px;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.05);
+
+    color: white;
+    text-align: center;
+
+    line-height: 1.6;
+}
+
+.ajudaMaior{
+    margin: 100px auto;
+    top: 100px;
+    text-align: center;
+}
+
+#sobre {
+    text-align: center;
+    margin-top: 40px;
+    padding: 40px;
+}
+
+.lista {
+    font-weight: bold;
+    color: white;
+    margin: 20px auto;
+    width: 300px;
+    text-align: left;
+}
+
+.lista li {
+    color: white;
+    margin: 10px 0;
+}
+
+.video {
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.redes a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    color: white;
+}
