@@ -1,0 +1,227 @@
+:root {
+    --bg: #030303;
+    --bg-soft: #101010;
+    --text: #ffffff;
+    --muted: #b9bcc7;
+    --accent: #ffc107;
+    --border: rgba(255, 255, 255, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.nav-nexus {
+    background: rgba(0, 0, 0, 0.92);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(8px);
+}
+
+.navbar-brand img {
+    width: 190px;
+    height: auto;
+}
+
+.nav-link {
+    color: #f5f5f5 !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent) !important;
+}
+
+.hero {
+    min-height: 100vh;
+    padding-top: 110px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85)),
+        url('fundo certo.png') center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 900px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.06);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 5vw, 4.6rem);
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 18px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero p,
+.text-secondary-nexus {
+    color: var(--muted);
+}
+
+.page-space {
+    padding-top: 145px;
+    padding-bottom: 70px;
+    min-height: 85vh;
+}
+
+.card-nexus,
+.product-card,
+.form-card,
+.video-box,
+.contact-info {
+    background: linear-gradient(145deg, #101010, #181818);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 28px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+.product-card {
+    text-align: center;
+    transition: transform 0.25s ease, border 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 193, 7, 0.6);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 330px;
+    object-fit: contain;
+    margin-bottom: 18px;
+}
+
+.product-card p {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.tabela-precos {
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.beneficios {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.beneficios li {
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 700;
+}
+
+.video-box {
+    padding: 12px;
+}
+
+.video-box video {
+    border-radius: 16px;
+    display: block;
+}
+
+.form-control {
+    background: #0a0a0a;
+    border: 1px solid var(--border);
+    color: white;
+    padding: 12px 14px;
+}
+
+.form-control:focus {
+    background: #0a0a0a;
+    color: white;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.15);
+}
+
+footer {
+    background: #080808;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.redes a {
+    color: #d7d7d7;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.redes a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 991px) {
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    .page-space {
+        padding-top: 120px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        min-height: 90vh;
+        padding-top: 95px;
+    }
+
+    .card-nexus,
+    .product-card,
+    .form-card,
+    .video-box,
+    .contact-info {
+        padding: 20px;
+    }
+
+    .redes a {
+        display: block;
+        margin: 8px 0;
+    }
+}
