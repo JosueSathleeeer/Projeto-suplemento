@@ -225,3 +225,55 @@ footer p {
         margin: 8px 0;
     }
 }
+
+/* Funcionalidades JavaScript */
+.light-mode {
+    --bg: #f7f7f7;
+    --bg-soft: #ffffff;
+    --text: #151515;
+    --muted: #555555;
+    --border: rgba(0, 0, 0, 0.12);
+}
+
+.light-mode .nav-nexus,
+.light-mode footer {
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.light-mode .nav-link {
+    color: #151515 !important;
+}
+
+.light-mode .hero {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.78), rgba(247, 247, 247, 0.92)),
+        url('fundo certo.png') center/cover no-repeat;
+}
+
+.light-mode .card-nexus,
+.light-mode .product-card,
+.light-mode .form-card,
+.light-mode .video-box,
+.light-mode .contact-info,
+.light-mode .beneficios li {
+    background: linear-gradient(145deg, #ffffff, #eeeeee);
+}
+
+.light-mode .form-control {
+    background: #ffffff;
+    color: #151515;
+}
+
+.filtro-produtos .btn {
+    margin: 5px;
+}
+
+.favorito-btn.favoritado {
+    background: var(--accent);
+    color: #000000;
+}
+
+.mensagem-contato {
+    color: var(--accent);
+    font-weight: 700;
+}
